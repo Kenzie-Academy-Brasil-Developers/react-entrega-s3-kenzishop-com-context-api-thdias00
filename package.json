@@ -37,9 +37,15 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "5",
     "react-toastify": "^8.1.0",
     "styled-components": "^5.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

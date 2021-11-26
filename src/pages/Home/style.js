@@ -10,14 +10,27 @@ export const Container = styled.div`
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        >svg{
-            color: #000000;
-            size: 20%;
-            background: #ffffff;
-            border: 1px solid #ffffff;
-            border-radius: 100%;
-            :hover{
-                cursor: pointer;
+        >div{
+            padding-right: 5%;
+            >svg{
+                color: #000000;
+                size: 20%;
+                background: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 100%;
+                :hover{
+                    cursor: pointer;
+                }
+            }
+            >span{
+                width: 25px;
+                text-align: center;
+                color: white;
+                position: absolute;
+                background: #f33330;
+                border: transparent;
+                border-radius: 100%;
+                padding: 5px;
             }
         }
     }

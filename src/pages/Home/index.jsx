@@ -8,7 +8,7 @@ import { useHistory } from "react-router";
 
 const Home = () => {
     const { products } = useContext(ProductsContext);
-    const { addToCart } = useContext(CartContext);
+    const { cart, addToCart } = useContext(CartContext);
 
     const history = useHistory();
 
@@ -20,7 +20,10 @@ const Home = () => {
         <Container>
             <header>
                 <img src={LogoImg} alt="Logo" />
-                <AiOutlineShoppingCart size={50} onClick={() => history.push("/cart")} />
+                <div>
+                    <AiOutlineShoppingCart size={50} onClick={() => history.push("/cart")} />
+                    <span>{cart.length}</span>
+                </div>
             </header>
             <main>
                 <ul>
